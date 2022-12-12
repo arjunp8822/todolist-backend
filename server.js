@@ -17,8 +17,8 @@ mongoose.connect('mongodb+srv://arjunp88:banana88@cluster0.myfihzn.mongodb.net/?
 .then(() => {
     console.log('connected to mongoose')
 })
-.catch(() => {
-    console.log('mongoose connection failed')
+.catch((e) => {
+    console.log('mongoose connection failed', e)
 })
 
 app.get('/todos', async (req, res) => {
