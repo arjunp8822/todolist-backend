@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(cors())
 mongoose.set('strictQuery', true);
 
-mongoose.connect('mongodb+srv://arjunp88:banana88@cluster0.myfihzn.mongodb.net/test', {
+mongoose.connect('mongodb+srv://arjunp88:banana88@cluster0.myfihzn.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
