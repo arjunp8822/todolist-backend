@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(cors())
 mongoose.set('strictQuery', true);
 
-mongoose.connect('mongodb://localhost:27017/myapp', {
+mongoose.connect('mongodb+srv://arjunp88:banana88@cluster0.myfihzn.mongodb.net/test', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
